@@ -57,3 +57,5 @@ const ViewAllUser = () => {
     </SafeAreaView>
   );
 };
+
+export default ViewAllUser;

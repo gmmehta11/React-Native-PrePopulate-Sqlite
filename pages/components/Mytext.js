@@ -11,9 +11,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginTop: 16,
     marginLeft: 35,
-    marginright: 35,
+    marginRight: 35,
   },
 });
 
 export default Mytext;
-

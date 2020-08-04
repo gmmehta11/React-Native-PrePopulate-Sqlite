@@ -3,7 +3,7 @@ import {TouchableOpacity, Text, StyleSheet} from 'react-native';
 
 const Mybutton = (props) => {
   return (
-    <TouchableOpacity style={StyleSheet.button} onPress={props.customClick}>
+    <TouchableOpacity style={styles.button} onPress={props.customClick}>
       <Text style={styles.text}>{props.title}</Text>
     </TouchableOpacity>
   );
@@ -12,7 +12,7 @@ const Mybutton = (props) => {
 const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
-    bacgroundColor: '#f05555',
+    backgroundColor: '#f05555',
     color: '#ffffff',
     padding: 10,
     marginTop: 16,

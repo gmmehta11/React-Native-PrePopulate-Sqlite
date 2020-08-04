@@ -97,7 +97,7 @@ cost RegisterUser = ({navigation }) =>{
                     Example of SQLite Database in React Native
                 </Text>
                 <Text style={{ fontSize: 16, textAlign: 'center', color: 'grey' }}>
-                    FafadiaTech
+                    Gaurav
                 </Text>
             </View>
         </SafeAreaView>

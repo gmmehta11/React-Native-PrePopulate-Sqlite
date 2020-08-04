@@ -12,7 +12,7 @@ const DeleteUser = ({navigation}) => {
   let deleteUser = () => {
     db.transaction((tx) => {
       tx.executeSql(
-        'DELETE FROM table_user WHERE user_id=?',
+        'DELETE FROM tbl_user WHERE user_id=?',
         [inputUserid],
         (tx, results) => {
           console.log('Results', results.rowsAffected);

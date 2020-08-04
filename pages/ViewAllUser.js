@@ -10,7 +10,7 @@ const ViewAllUser = () => {
 
   useEffect(() => {
     db.transaction((tx) => {
-      tx.executeSql('SELECT * FROM table_user', [], (tx, result) => {
+      tx.executeSql('SELECT * FROM tbl_user', [], (tx, result) => {
         var temp = [];
         for (let i = 0; i < reseults.rows.length; ++i)
           temp.push(results.rows.item(i));

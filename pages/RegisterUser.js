@@ -37,7 +37,7 @@ const RegisterUser = ({navigation}) => {
 
     db.transaction(function (tx) {
       tx.executeSql(
-        'INSERT INTO table_user(user_name, user_contact, user_address) VALUES (?,?,?)',
+        'INSERT INTO tbl_user(user_name, user_contact, user_address) VALUES (?,?,?)',
         [userName, userContact, userAddress],
         (tx, results) => {
           console.log('Results', results.rowsAffected);

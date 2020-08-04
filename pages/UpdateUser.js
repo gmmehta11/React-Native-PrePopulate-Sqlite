@@ -29,7 +29,7 @@ const UpdateUser = ({navigation}) => {
     console.log(inputUserId);
     db.transaction((tx) => {
       tx.executeSql(
-        'SELECT * FROM table_user WHERE user_id = ?',
+        'SELECT * FROM tbl_user WHERE user_id = ?',
         [inputUserId],
         (tx, results) => {
           var len = results.rows.length;
@@ -67,7 +67,7 @@ const UpdateUser = ({navigation}) => {
 
     db.transaction((tx) => {
       tx.executeSql(
-        'UPDATE table_user set user_name = ?, user_contact=?, user_address=?,WHERE user_id=?',
+        'UPDATE tbl_user set user_name = ?, user_contact=?, user_address=?,WHERE user_id=?',
         [userName, userContact, userAddress, inputUserId],
         (tx, results) => {
           console.log('Results', results.rowsAffected);

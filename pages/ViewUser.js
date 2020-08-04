@@ -15,7 +15,7 @@ const ViewUser = () => {
     setUserData({});
     db.transaction((tx) => {
       tx.executeSql(
-        'SELECT * FROM table_user WHERE user_id = ?',
+        'SELECT * FROM tbl_user WHERE user_id = ?',
         [inputUserId],
         (tx, results) => {
           var len = results.rows.length;

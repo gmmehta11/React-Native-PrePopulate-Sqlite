@@ -40,7 +40,7 @@ const ViewAllUser = () => {
     <SafeAreaView style={{flex: 1}}>
       <View style={{flex: 1, backgroundColor: 'white'}}>
         <View style={{flex: 1}}>
-          <Flatlist
+          <FlatList
             data={flatListItems}
             ItemseparatorComponent={listViewItemSeparator}
             keyExtractor={(item, index) => index.toString()}

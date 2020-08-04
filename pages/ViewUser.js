@@ -10,7 +10,7 @@ const ViewUser = () => {
   let [inputUserId, setInputUserid] = useState('');
   let [userData, setUerData] = useState({});
 
-  let SearchUser = () => {
+  let searchUser = () => {
     console.log(inputUserId);
     setUserData({});
     db.transaction((tx) => {
@@ -57,3 +57,5 @@ const ViewUser = () => {
     </SafeAreaView>
   );
 };
+
+export default ViewUser;

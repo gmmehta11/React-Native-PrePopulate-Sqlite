@@ -1,5 +1,5 @@
 //Delete the user
-import react, {useState} from 'react';
+import React, {useState} from 'react';
 import {Button, Text, View, Alert, SafeAreaView} from 'react-native';
 import Mytextinput from './components/Mytextinput';
 import Mybutton from './components/Mybutton';
@@ -45,7 +45,7 @@ const DeleteUser = ({navigation}) => {
             onChangeText={(inputuserId) => setInputUserId(inputUserId)}
             style={{padding: 10}}
           />
-          <Mybutton title="Delete User" customClick={deleteuser} />
+          <Mybutton title="Delete User" customClick={deleteUser} />
         </View>
         <Text style={{fontSize: 18, textAlign: 'center', color: 'grey'}}>
           Example of SQLite Database in React Native

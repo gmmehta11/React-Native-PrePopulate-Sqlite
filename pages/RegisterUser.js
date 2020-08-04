@@ -20,7 +20,7 @@ const RegisterUser = ({navigation}) => {
   let [userContact, setUserContact] = useState('');
   let [userAddress, setUserAddress] = useState('');
   let register_user = () => {
-    console.log(username, userContact, userAddress);
+    console.log(userName, userContact, userAddress);
 
     if (!userName) {
       alert('Please fill name');

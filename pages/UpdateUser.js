@@ -178,3 +178,4 @@ const UpdateUser = ({navigation}) => {
     </SafeAreaView>
   );
 };
+export default UpdateUser;

@@ -49,44 +49,6 @@ const UpdateUser = ({navigation}) => {
     console.log(inputUserId, userName, userContact, userAddress);
 
     if (!inputUserId) {
-      Alert('Please fill User id');
-      return;
-    }
-    if (!userName) {
-      Alert('Please fill name');
-      return;
-    }
-    if (!userContact) {
-      Alert('Please fill contact number');
-      return;
-    }
-    if (!userAddress) {
-      Alert('Please fill Address');
-      return;
-    }
-
-    db.transaction((tx) => {
-      tx.executeSql(
-        'SELECT * FROM table_user where user_id = ?',
-        [inputUserId],
-        (tx, result) => {
-          var len = results.rows.length;
-          if (len > 0) {
-            let res = results.rows.item(0);
-            updateAllStates(res.user_name, res.user_contact, res.user_address);
-          } else {
-            alert('No user found');
-            updateAllStates('', '', '');
-          }
-        },
-      );
-    });
-  };
-
-  let updateUser = () => {
-    console.log(inputUserId, userName, userContact, userAddress);
-
-    if (!inputUserId) {
       alert('Please fill user id');
       return;
     }
